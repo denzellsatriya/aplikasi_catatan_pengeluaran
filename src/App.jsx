@@ -6,8 +6,8 @@ import ExpenseList from './components/ExpenseList';
 
 function App() {
   const [expenses, setExpenses] = useState([
-    { id: 1, title: 'Makan Siang di Kantin', category: 'Konsumsi', amount: 20000, date: '2026-11-01' },
-    { id: 2, title: 'Bensin Motor', category: 'Transportasi', amount: 15000, date: '2026-11-02' }
+    { id: 1, title: 'makan siang (Warteg Mulya)', category: 'Konsumsi', amount: 15000, date: '2026-11-01' },
+    { id: 2, title: 'isi bensin motor', category: 'Transportasi', amount: 100000, date: '2026-11-02' }
   ]);
 
   const handleAddExpense = (newExpense) => {
