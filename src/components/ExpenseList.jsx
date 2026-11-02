@@ -3,13 +3,13 @@ import ExpenseCard from './ExpenseCard';
 function ExpenseList({ expenses }) {
   return (
     <div>
-      <h3>Daftar Pengeluaran</h3>
+      <h3 style={{ color: '#ffffff', marginBottom: '12px' }}>Daftar Pengeluaran</h3>
       
-      {/* 5c. Conditional Rendering jika data kosong */}
       {expenses.length === 0 ? (
-        <p style={{ fontStyle: 'italic', color: '#777' }}>Belum ada data pengeluaran</p>
+        <p style={{ fontStyle: 'italic', color: '#888888', textAlign: 'center', margin: '20px 0' }}>
+          Belum ada data pengeluaran
+        </p>
       ) : (
-        // 5a. Render list menggunakan .map() dengan key unik
         expenses.map((item) => (
           <ExpenseCard key={item.id} expense={item} />
         ))
