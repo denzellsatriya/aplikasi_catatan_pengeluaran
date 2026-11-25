@@ -1,3 +1,7 @@
+# Aplikasi Catatan Pengeluaran
+
+Aplikasi pencatatan pengeluaran berbasis web dengan backend **NestJS**, **Prisma ORM v7**, dan database **PostgreSQL** (`catatan_pengeluaran_db`) untuk mengelola data pengeluaran (CRUD) serta menampilkan statistik pengeluaran.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
