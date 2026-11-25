@@ -5,3 +5,14 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Expense {
+  id          Int      @id @default(autoincrement())
+  title       String
+  amount      Int
+  category    String
+  note        String?
+  expenseDate DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
